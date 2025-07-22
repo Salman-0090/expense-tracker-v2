@@ -3,14 +3,14 @@ import "./App.css";
 
 function App() {
   const [type, setType] = useState("income");
-  const [items, setItems] = useState(function () {
+  const [items, setItems] = useState(() => {
     const storedValue = localStorage.getItem("items");
-    return JSON.parse(storedValue);
+    return storedValue ? JSON.parse(storedValue) : [];
   });
 
-  const [darkMode, setDarkMode] = useState(function () {
+  const [darkMode, setDarkMode] = useState(() => {
     const storedValue = localStorage.getItem("themes");
-    return JSON.parse(storedValue);
+    return storedValue ? JSON.parse(storedValue) : false;
   });
 
   function toggleMode() {
