@@ -28,9 +28,9 @@ function App() {
   return (
     <div className={darkMode ? "App light" : "app dark"}>
       <div className="container">
-        <button className="btn-toggle" onClick={toggleMode}>
-          Switch to {darkMode ? "dark" : "light"} mode
-        </button>
+        <span className="toggle" onClick={toggleMode}>
+          {darkMode ? "🌙" : "🔆"}
+        </span>
         <Summary items={items} />
         <Type type={type} setType={setType} />
         <Form type={type} items={items} setItems={setItems} />
