@@ -1,9 +1,9 @@
 import "./App.css";
 import { useExpenseContext } from "./Context/ExpenseContext";
-import Summary from "./Context/Components/Summary";
-import Type from "./Context/Components/Type";
-import Form from "./Context/Components/Form";
-import List from "./Context/Components/List";
+import Summary from "./Components/Summary";
+import Type from "./Components/Type";
+import Form from "./Components/Form";
+import List from "./Components/List";
 
 function App() {
   const { darkMode, toggleMode } = useExpenseContext();

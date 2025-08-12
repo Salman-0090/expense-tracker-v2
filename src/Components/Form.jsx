@@ -1,4 +1,4 @@
-import { useExpenseContext } from "../ExpenseContext";
+import { useExpenseContext } from "../Context/ExpenseContext";
 
 function Form() {
   const { type, description, amount, dispatch } = useExpenseContext();

@@ -1,4 +1,4 @@
-import { useExpenseContext } from "../ExpenseContext";
+import { useExpenseContext } from "../Context/ExpenseContext";
 
 function Type() {
   const { type, dispatch } = useExpenseContext();
